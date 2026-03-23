@@ -1,0 +1,1 @@
+export const BLIZZARD_HOST_NAME = 'https://eu.api.blizzard.com'
