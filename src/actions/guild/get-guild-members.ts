@@ -8,7 +8,6 @@ const redis = new Redis({
   token: process.env.UPSTASH_REDIS_REST_TOKEN!,
 });
 
-/** Shape of the JSON written by the sync-guild cron (`guild:linear:all`). */
 export type GuildLinearCache = {
   lastUpdated: number;
   members: WowCharacterProfileSummary[];
