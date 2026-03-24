@@ -1,8 +1,8 @@
 "use server";
 
 import type { GuildRosterResponse } from "@/types/wow-guild-roster";
-import { constructFetchRequest } from "@/utils/lib";
 import { getBlizzardToken } from "../get-blizzard-token";
+import { constructFetchRequest } from "@/lib/utils";
 
 export async function getGuildRoster(
   realmSlug = "burning-legion",

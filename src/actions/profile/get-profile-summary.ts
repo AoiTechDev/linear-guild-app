@@ -1,8 +1,8 @@
 "use server";
 
 import type { WowCharacterProfileSummary } from "@/types/wow-character-profile-summary";
-import { constructFetchRequest } from "@/utils/lib";
 import { getBlizzardToken } from "../get-blizzard-token";
+import { constructFetchRequest } from "@/lib/utils";
 
 export async function getProfileSummary({
   realmSlug = "burning-legion",
